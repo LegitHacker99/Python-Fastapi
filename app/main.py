@@ -6,8 +6,8 @@ from fastapi.encoders import jsonable_encoder
 from pydantic import BaseModel, EmailStr, Field, HttpUrl
 from typing import Any
 
-from routers.chats import router as chats_router
-from routers.users import router as users_router
+from app.routers.chats import router as chats_router
+from app.routers.users import router as users_router
 
 app = FastAPI(swagger_ui_parameters={
     "tryItOutEnabled": True,

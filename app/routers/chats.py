@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Depends, status
 from pydantic import BaseModel, Field
-from deps import get_user_token
+from app.deps import get_user_token
 from typing import Any
 
 router = APIRouter(
